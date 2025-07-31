@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profentix | Modern SaaS Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 24px;
+      color: #58a6ff;
+    }
+    nav a {
+      color: #ffffff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #58a6ff;
+    }
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1581090700227-1e8d89c0d06d');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .cta-btn {
+      background-color: #58a6ff;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #1f6feb;
+    }
+    .features, .pricing, .testimonials, .contact, .footer {
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .features h3, .pricing h3, .testimonials h3, .contact h3 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      background-color: #161b22;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .pricing-table {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .pricing-plan {
+      background-color: #161b22;
+      padding: 30px;
+      border-radius: 8px;
+      width: 280px;
+    }
+    .pricing-plan ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pricing-plan ul li {
+      padding: 8px 0;
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      border-radius: 5px;
+      border: none;
+      background-color: #1f2937;
+      color: white;
+    }
+    .contact button {
+      background-color: #58a6ff;
+      padding: 12px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background-color: #1f6feb;
+    }
+    .footer {
+      background-color: #161b22;
+      color: #aaa;
+      font-size: 14px;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Profentix</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Powerful Cloud Solutions for Growing Teams</h2>
+    <p>Launch faster, scale smarter. Profentix delivers reliable, high-performance SaaS infrastructure so you can focus on growth.</p>
+    <button class="cta-btn">Get Started</button>
+  </section>
+
+  <section id="features" class="features">
+    <h3>Why Choose Profentix?</h3>
+    <div class="feature-grid">
+      <div class="feature">
+        <h4>Fast Deployment</h4>
+        <p>Spin up services in seconds and scale effortlessly.</p>
+      </div>
+      <div class="feature">
+        <h4>Reliable Uptime</h4>
+        <p>99.99% guaranteed SLA for mission-critical apps.</p>
+      </div>
+      <div class="feature">
+        <h4>Global Reach</h4>
+        <p>Data centers across continents ensure low latency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h3>Simple Pricing</h3>
+    <div class="pricing-table">
+      <div class="pricing-plan">
+        <h4>Starter</h4>
+        <p>$19/month</p>
+        <ul>
+          <li>1 Project</li>
+          <li>5 GB Storage</li>
+          <li>Email Support</li>
+        </ul>
+      </div>
+      <div class="pricing-plan">
+        <h4>Pro</h4>
+        <p>$49/month</p>
+        <ul>
+          <li>10 Projects</li>
+          <li>50 GB Storage</li>
+          <li>Priority Support</li>
+        </ul>
+      </div>
+      <div class="pricing-plan">
+        <h4>Enterprise</h4>
+        <p>Custom</p>
+        <ul>
+          <li>Unlimited Projects</li>
+          <li>1 TB Storage</li>
+          <li>Dedicated Manager</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h3>What Our Clients Say</h3>
+    <blockquote>
+      “Profentix transformed how we deliver our SaaS platform. Performance, reliability, and support are top-notch!”
+    </blockquote>
+    <p>- Sara J., CTO at CloudNova</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Profentix. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
